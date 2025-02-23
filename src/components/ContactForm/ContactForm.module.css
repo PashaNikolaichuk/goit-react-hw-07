@@ -1,0 +1,32 @@
+.form {
+  width: 300px;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #ccc;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+.labelForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.btnForm {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btnForm:hover {
+  background-color: aliceblue;
+}

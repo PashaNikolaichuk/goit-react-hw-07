@@ -1,0 +1,8 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}

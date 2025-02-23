@@ -1,0 +1,28 @@
+.containerContact {
+  border: 1px solid #0d0d0e;
+  border-radius: 8px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  padding-right: 5px;
+}
+
+.btnDelete {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
