@@ -2,8 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import s from "./ContactForm.module.css";
 import { useDispatch } from "react-redux";
-import { nanoid } from "@reduxjs/toolkit";
-import { addTask } from "../../redux/contactsSlice";
+import { addTask } from "../../redux/contactsOps";
 
 const ContactForm = () => {
   // ми повідомляємо Redux, що треба виконати певну дію, і ця дія змінить стан у store.
@@ -30,7 +29,6 @@ const ContactForm = () => {
       // сабмітить дані у values
       onSubmit={(values, options) => {
         const newContact = {
-          id: nanoid(),
           name: values.name,
           number: values.number,
         };

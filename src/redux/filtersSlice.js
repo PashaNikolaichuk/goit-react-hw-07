@@ -21,4 +21,4 @@ export const filterReducer = filterSlice.reducer;
 export const { changeFilter } = filterSlice.actions;
 
 // Отримати значення фільтра
-export const selectFilters = (state) => state.filter.filters.name;
+export const selectNameFilter = (state) => state.filter.filters.name;
