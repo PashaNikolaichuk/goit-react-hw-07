@@ -5,8 +5,8 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 axios.defaults.baseURL = "https://67bb2601fbe0387ca13939cb.mockapi.io";
 
 //createAsyncThunk допомогає виконувати HTTP-запит
-export const fetchData = createAsyncThunk(
-  "contacts/fetchAll",
+export const fetchContacts = createAsyncThunk(
+  "contacts/fetchContacts",
   //(thunkAPI) Використовуємо символ підкреслення як ім'я першого параметра, тому що в цій операції він нам не потрібен
   //(thunkAPI)   Цей об'єкт дає тобі доступ до додаткових можливостей Redux Toolkit
   async (_, thunkAPI) => {
@@ -20,7 +20,7 @@ export const fetchData = createAsyncThunk(
   }
 );
 
-export const addTask = createAsyncThunk(
+export const addContact = createAsyncThunk(
   "contacts/addContact",
   async (newContact, thunkAPI) => {
     try {

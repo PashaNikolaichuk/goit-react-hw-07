@@ -4,7 +4,7 @@ import SearchBox from "./components/SearchBox/SearchBox";
 import ContactList from "./components/ContactList/ContactList";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { fetchData } from "./redux/contactsOps";
+import { fetchContacts } from "./redux/contactsOps";
 import { selectError, selectLoading } from "./redux/contactsSlice";
 import { Loader } from "./components/Loader/Loader";
 
@@ -12,7 +12,7 @@ const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     // запускаєм її
-    dispatch(fetchData());
+    dispatch(fetchContacts());
   }, [dispatch]);
 
   // витягуєм
